@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Магазин одягу Марія</h1>
+
+        <div class="info">
+            Отримувач: <b>Магазин одягу Марія</b><br>
+            Сума: <b>100 UAH</b><br>
+            Призначення: <b>Покупка товару</b>
+        </div>
+
+        <button class="btn" onclick="openPayment()">
+            Відкрити оплату
+        </button>
+
+        <div class="banks" id="banks">
+            <div class="bank" onclick="openBank('mono')">
+                <img src="./images/monobank-logo.png">
+                <span>Monobank</span>
+            </div>
+            <div class="bank" onclick="openBank('abank')">
+                <img src="./images/a-bank.png">
+                <span>A‑Bank</span>
+            </div>
+            <div class="bank" onclick="openBank('privat')">
+                <img src="./images/Privat24_Logo.png">
+                <span>Privat Bank</span>
+            </div>
+        </div>
+
+        <div class="footer">Безпечна оплата через QR-код НБУ</div>
+        <img src="./images/tas-logo.png" alt="" class="taslogo"  style="display: block; margin: 0 auto;" width="200">
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
