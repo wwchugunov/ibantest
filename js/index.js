@@ -62,7 +62,8 @@ if (isMobile) {
 }
 
 function openPayment() {
-  window.open(paymentUrl, "_blank");
+  // window.open(paymentUrl, "_blank");
+  console.log(paymentUrl)
 }
 
 
