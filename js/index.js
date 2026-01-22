@@ -93,5 +93,6 @@ function openBank(code) {
   }
 
   // alert(${link})
-  location.href = link;
+  // location.href = link;
+  console.log(link)
 }
