@@ -63,7 +63,6 @@ if (isMobile) {
 
 function openPayment() {
   window.open(paymentUrl, "_blank");
-  console.log(paymentUrl)
 }
 
 
@@ -83,16 +82,15 @@ function openBank(code) {
   if (ua.includes("android")) {
     link = paymentUrl.replace("https://", "intent://") +
       "#Intent;scheme=https;package=" + b.android + ";end";
-     alert(${link})
+     // alert(${link})
   }
 
   if (ua.includes("iphone")) {
     link = paymentUrl.replace("https://", b.ios + "://");
-     alert(${link});
+     // alert(${link});
     
   }
 
   // alert(${link})
   location.href = link;
-  // console.log(link)
 }
